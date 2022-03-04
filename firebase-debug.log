@@ -1,0 +1,38 @@
+[debug] [2022-03-04T14:56:43.996Z] ----------------------------------------------------------------------
+[debug] [2022-03-04T14:56:43.998Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-03-04T14:56:43.999Z] CLI Version:   9.13.1
+[debug] [2022-03-04T14:56:43.999Z] Platform:      darwin
+[debug] [2022-03-04T14:56:43.999Z] Node Version:  v14.17.1
+[debug] [2022-03-04T14:56:44.000Z] Time:          Fri Mar 04 2022 14:56:43 GMT+0000 (Greenwich Mean Time)
+[debug] [2022-03-04T14:56:44.000Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-04T14:56:44.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-04T14:56:44.012Z] > authorizing via signed-in user (xtlbruggen@gmail.com)
+[info] i  emulators: Starting emulators: auth {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth"}}
+[debug] [2022-03-04T14:56:44.035Z] [hub] writing locator at /var/folders/j9/dhqdb60j6kb3k087nny222l40000gn/T/hub-vibe-rate-api.json
+[debug] [2022-03-04T14:56:46.809Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-04T14:56:46.810Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-04T14:56:46.810Z] Starting Emulator UI with command {"binary":"node","args":["/Users/xavierbruggen/.cache/firebase/emulators/ui-v1.5.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/xavierbruggen/.cache/firebase/emulators/ui-v1.5.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-03-04T14:56:46.912Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI        │
+├────────────────┼────────────────┼────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth │
+└────────────────┴────────────────┴────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[warn] ⚠  TypeError: Cannot read property 'email' of undefined
+    at signInWithPassword (/usr/local/lib/node_modules/firebase-tools/lib/emulator/auth/operations.js:996:29)
+    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/auth/server.js:343:20)
+    at /usr/local/lib/node_modules/firebase-tools/node_modules/promise-breaker/index.js:265:46 {"metadata":{"emulator":{"name":"auth"},"message":"TypeError: Cannot read property 'email' of undefined\n    at signInWithPassword (/usr/local/lib/node_modules/firebase-tools/lib/emulator/auth/operations.js:996:29)\n    at Proxy.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/emulator/auth/server.js:343:20)\n    at /usr/local/lib/node_modules/firebase-tools/node_modules/promise-breaker/index.js:265:46"}}

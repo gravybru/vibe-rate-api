@@ -1,3 +1,5 @@
+# get rid of this shit
+
 class MockSentimentResponse:
     def __init__(self, sentences, language, document_sentiment):
         self.sentences = sentences

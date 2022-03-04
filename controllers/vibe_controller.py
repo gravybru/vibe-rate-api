@@ -1,11 +1,13 @@
 from flask_restful import Resource
 from flask import request
+from services.auth import check_token
 from services.format import format_raw_sentiment
 from services.sentiment import sample_analyze_sentiment
 
 error = {"error": "'text_content' missing on request body"}
 
 class VibeRateController(Resource):
+    @check_token
     def post(self):
         try:
             if (request.get_json() is None): return error, 400
